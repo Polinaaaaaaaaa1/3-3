@@ -92,8 +92,8 @@ namespace _3_3
             Console.WriteLine("[{0}]", string.Join(", ", array3));
         }
 
-        public void ReCreate(int length, int y =0)
-        {
+        public void ReCreate()
+        {int length = int.Parse(Console.ReadLine());
             array = new int[length];
         }
     }
