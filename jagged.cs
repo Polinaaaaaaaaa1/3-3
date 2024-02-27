@@ -11,20 +11,11 @@ namespace _3_3
         private int[] array_of_lengths;
         private int[][] array;
         private int heigth;
-        private bool id;
-        public jagged(int heigth,int[] array_of_lengths,bool id)
+        public jagged(int heigth,int[] array_of_lengths)
         {
             this.heigth = heigth;
             array = new int[heigth][];
             this.array_of_lengths = array_of_lengths;
-            if (id == true)
-            {
-                this.user_fill();
-            }
-            else
-            {
-                this.random_fill();
-            }
         }
         protected override void user_fill()
         {
@@ -104,7 +95,7 @@ namespace _3_3
                 }
             }
         }
-        public void ReCreate(int heigth)
+        public void ReCreate(int heigth,int y =0)
         {
             array = new int[heigth][];
         }

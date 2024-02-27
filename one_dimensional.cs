@@ -10,20 +10,9 @@ namespace _3_3
     internal class one_dimensional : BaseArray, IBaseArray, IPRINTER
     {
         private int[] array;
-        private bool id;
-        public one_dimensional(int length,bool id)
+        public one_dimensional(int length)
         {
             array = new int[length];
-            this.id = id;
-            if(id == true)
-            {
-                this.user_fill();
-            }
-            else
-            {
-                this.random_fill(); 
-            }
-
         }
         protected override void user_fill()
         {
@@ -103,7 +92,7 @@ namespace _3_3
             Console.WriteLine("[{0}]", string.Join(", ", array3));
         }
 
-        public void ReCreate(int length)
+        public void ReCreate(int length, int y =0)
         {
             array = new int[length];
         }

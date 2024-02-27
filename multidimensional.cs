@@ -11,20 +11,12 @@ namespace _3_3
     {
         private int[,] array;
         private int length, heigth;
-        private bool id;
-        public multidimensional(int length2, int heigth2,bool id)
+        public multidimensional(int length2, int heigth2)
         {
             length = length2;
             heigth = heigth2;
             array = new int[length,heigth];
-            if (id == true)
-            {
-                this.user_fill();
-            }
-            else
-            {
-                this.random_fill();
-            }
+           
         }
         protected override void user_fill()
         {
