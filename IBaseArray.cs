@@ -10,6 +10,6 @@ namespace _3_3
     public interface IBaseArray
     {
         void average();
-        void ReCreate(int x, int y=0);
+        void ReCreate();
     }
 }
