@@ -96,10 +96,11 @@ namespace _3_3
                 }
             }
         }
-        public void ReCreate(int length,int heigth)
+         public void ReCreate()
         {
+            int length = int.Parse(Console.ReadLine());
+            int heigth = int.Parse(Console.ReadLine());
             array = new int[length,heigth];
         }
-
     }
 }
